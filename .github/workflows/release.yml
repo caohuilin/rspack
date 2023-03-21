@@ -37,6 +37,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
+          cache: "pnpm"
       - name: Install node_modules
         run: |
           npm install -g pnpm@7.25.0
@@ -414,6 +415,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
+          cache: "pnpm"
       - name: Setup node dependencies
         run: |
           npm install -g pnpm@7.25.0
